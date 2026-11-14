@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Jasper S. Pagsulingan | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f5f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 22px;
+            text-align: center;
+        }
+
+        nav {
+            background: #2563eb;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bfdbfe;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #14213d, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+        }
+
+        section {
+            width: 85%;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #2563eb;
+            background: #f8fafc;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        pre {
+            background: #111827;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 600px) {
+            section {
+                width: 94%;
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2 style="color:white; border:none;">MY PERSONAL PORTFOLIO</h2>
+    <p>BS Information Technology</p>
+</header>
+
+<nav>
+    <a href="#personal">Personal</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#java">Java Code</a>
+</nav>
+
+<div class="hero">
+    <h1>Hi! I'm Mark Jasper S. Pagsulingan</h1>
+    <p>BS Information Technology Student</p>
+    <p>Welcome to my personal portfolio website!</p>
+</div>
+
+<section id="personal">
+    <h2>Personal Information</h2>
+
+    <p><b>Full Name:</b> Mark Jasper S. Pagsulingan</p>
+    <p><b>Course:</b> Bachelor of Science in Information Technology</p>
+    <p><b>School:</b> Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+    <p><b>Location:</b> Guimba, Nueva Ecija</p>
+
+    <br>
+
+    <h3>About Me</h3>
+    <p>
+        I am an Information Technology student who is
+        passionate about learning computer technology,
+        programming, and web development.
+
+        I enjoy exploring new ideas, developing my
+        technical skills, and improving my knowledge
+        in the field of Information Technology.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Educational Background</h2>
+
+    <div class="education-item">
+        <h3>College</h3>
+        <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+        <p>Course: BS Information Technology</p>
+        <p>Status: Currently Studying</p>
+    </div>
+
+    <div class="education-item">
+        <h3>Senior High School</h3>
+        <p>Guimba Senior High School</p>
+    </div>
+
+    <div class="education-item">
+        <h3>Junior High School</h3>
+        <p>Bartolome Sangalang National High School</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills and Competencies</h2>
+
+    <p>My skills and competencies as an IT student:</p>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Java Programming</span>
+        <span>Problem Solving</span>
+        <span>Computer Skills</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+        <span>Creativity</span>
+    </div>
+</section>
+
+<section id="java">
+    <h2>Java Code</h2>
+
+    <h3>Number Guessing Game</h3>
+
+    <p>
+        This is my final programming project in CC102.
+        It is a console-based game where the player
+        guesses a randomly generated number from
+        1 to 100 with only 7 attempts.
+    </p>
+
+    <br>
+
+<pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int secretNumber = random.nextInt(100) + 1;
+        int guess;
+        int attempts = 7;
+
+        System.out.println("==============================");
+        System.out.println("     NUMBER GUESSING GAME");
+        System.out.println("==============================");
+
+        System.out.println("Guess the number from 1 to 100!");
+        System.out.println("You have 7 attempts.");
+
+        while (attempts > 0) {
+
+            System.out.print("\nEnter your guess: ");
+            guess = input.nextInt();
+
+            if (guess == secretNumber) {
+                System.out.println("Congratulations! You Win!");
+                break;
+            }
+            else if (guess > secretNumber) {
+                System.out.println("Too HIGH! Try again.");
+            }
+            else {
+                System.out.println("Too LOW! Try again.");
+            }
+
+            attempts--;
+
+            System.out.println("Attempts left: " + attempts);
+        }
+
+        if (attempts == 0) {
+            System.out.println("\nGame Over!");
+            System.out.println("The correct number was: " + secretNumber);
+        }
+
+        input.close();
+    }
+}</code></pre>
+
+</section>
+
+<footer>
+    <h3>Mark Jasper S. Pagsulingan</h3>
+    <p>BS Information Technology | OLSHCO</p>
+    <p>© 2026 My Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
